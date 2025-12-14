@@ -1,0 +1,145 @@
+
+<header class="header-container">
+    <h1 class="name-me"><b>Maël</b> Bouvier Sobrino</h1>
+
+    <nav class="nav-links">
+        <a href="#introPage">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About me</a>
+        <a href="#Technologies">Skills</a>
+        <a href="#References">References</a>
+    </nav>
+
+        <a href="#contact" class="contact-btn-header">
+            <span class="contact-text">contact me</span>
+        </a>
+</header>
+
+<style>
+/* ...existing code... */
+
+.header-container {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border: 1px solid transparent;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    z-index: 420;
+}
+
+.header-container.scrolled {
+    background-color: #020618;
+    border-color: #2f0d68;
+    padding: 10px 20px;
+}
+
+.header-container h1 {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.header-container h1 b {
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+    flex-grow: 1;
+    margin-right: auto;
+    margin-left: 40px;
+    flex-wrap: nowrap;
+    min-width: 0;
+    transition: max-height 0.3s, opacity 0.3s;
+}
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s;
+    white-space: nowrap;
+}
+.nav-links a:hover {
+    color: #a78bfa;
+}
+
+.nav-links a:focus {
+    color: #a78bfa;
+}
+
+/* Responsive styles */
+@media (max-width: 700px) {
+    .nav-links {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-btn-header {
+        display: none;
+    }
+    .header-container h1 {
+        align-self: center;
+    }
+}
+
+.contact-btn-header {
+    position: absolute;
+    overflow: hidden;
+    right: 0%;
+    padding: 8px 20px;
+    border-radius: 9999px;
+    background-color: white;
+    color: #0f172a;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+.contact-btn-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: #a78bfa;
+    opacity: 0.2;
+    transition: transform 0.3s ease, right 0.3s ease;
+    transform: translateX(0);
+    z-index: 0;
+}
+.contact-btn-header:hover::before {
+    right: 0;
+    transform: translateX(100%);
+}
+.contact-btn-header span {
+    position: relative;
+    z-index: 1;
+}
+.contact-btn-header i {
+    position: relative;
+    z-index: 1;
+    display: none;
+}
+.section {
+    padding: 100px 40px;
+    min-height: 100vh;
+}
+.section:nth-child(odd) {
+    background-color: #1e293b;
+}
+.section:nth-child(even) {
+    background-color: #0f172a;
+}
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+</style>

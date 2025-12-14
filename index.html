@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maël BOUVIER SOBRINO</title>
+    <link rel="icon" href="assets/img/Icon.jpg">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+</head>
+<body>
+
+
+    <!-- header will be injected here -->
+    <header class="header-container"></header>
+    <script src="assets/js/header.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <div class="return-top-container">
+        <button aria-label="ScrollToTop" class="return-top-button" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+    </div>
+    <div class="main-container">
+        <main>
+            <section id="introPage">
+                <div class="text-section">
+                    <h2>
+                        Hello, I am <span class="highlight">Maël</span> Bouvier Sobrino <br>
+                        A versatile student in <span class="highlight">computer science</span>
+                    </h2>
+
+                    <p>
+                        Second-year <span class="highlight">computer science student</span> in an IT Bachelor's Degree of Technology in Annecy, focusing on <span class="highlight">software and web development</span>. . I am seeking an <span class="highlight">internship</span> to apply my knowledge while contributing to innovative and concrete projects.
+                    </p>
+                    
+                    <div class="intro-button">
+                    <a href="assets/files/INTERNATIONAL-CV.pdf" class="CV-btn" target="_blank">
+                        <i class="fa-regular fa-file-pdf"></i> Download CV
+                    </a>
+                    <a href="#contact" class="contact-btn">
+                        <h4>Contact me &rarr;</h4>
+                    </a>
+                    </div>
+                </div>
+
+                <div class="image-section">
+                    <img src="assets/img/profile.png" alt="Photo de profil de Maël">
+                </div>
+            </section>
+
+
+
+            <section id="projects">
+                <div class="projects-header">
+                    <p class="subtitle">Some of my projects</p>
+                    <h2 class="title">Curious to <span class="highlight">discover</span> my work?</h2>
+
+                </div>
+
+                <div class="filters-container">
+                    <span class="filter-label"><i class="fa-solid fa-filter"></i> Filter by:</span>
+                    <button class="filter-btn all active" data-filter="all">All Projects</button>
+                </div>
+
+                <div class="projects-container" id="projects-container">
+                    </div>
+            </section>
+
+            <section id="informations">
+            </section>
+
+            <section id="about">
+                <div class="about-header">
+                    <h6 class="about-subtitle">
+                        Want to know more about me?
+                    </h6>
+                    <h3 class="about-title">
+                        Here are a few <span class="highlight">things</span> about me
+                    </h3>
+                </div>
+                
+                <div class="experiences-container">
+                    <div class="experiences-header">
+                        <p class="subtitle">My professional experiences</p>
+                        <h2 class="title">Here are my <span class="highlight">experiences</span></h2>
+                    </div>
+                </div>
+                <div class="formations-container">
+                    <div class="Formations-header">
+                        <p class="subtitle">My educational background</p>
+                        <h2 class="title">Here are my <span class="highlight">formations</span></h2>
+                    </div>
+                </div>
+
+                <div class="languages-container"></div>
+
+                <div class="misc-container"></div>
+
+
+                <div class="benefits-container">
+                    <div class="benefits-header">
+                       <div class="benefits-header">
+                            <p class="subtitle">My strengths beyond technical skills.</p>
+                            <h2 class="title">Here are my main <span class="highlight">Soft Skills</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+
+            
+            
+            <section id="Technologies">
+                <div class="tech-header-container">
+                    <p class="subtitle">Want to know what I’m capable of?</p>
+                    <h2 class="title">
+                        Here are the technologies I am  <span class="highlight">proficient</span> in.
+                    </h2>
+                </div>
+                
+                <div class="tabs-container">
+                    <button class="tab active-tab" data-tab="developpement">Developpement</button>
+                    <button class="tab" data-tab="systeme">System</button>
+                    <button class="tab" data-tab="bdd">Database</button>
+                </div>
+                
+                <div class="content-container">
+                    <div id="developpement" class="tab-content active">
+                        <div class="tech-grid" data-category="developpement">
+                        </div>
+                    </div>
+
+                    <div id="systeme" class="tab-content">
+                        <div class="tech-grid" data-category="systeme">
+                        </div>
+                    </div>
+                    
+                    <div id="bdd" class="tab-content">
+                        <div class="tech-grid" data-category="bdd">
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            
+
+            <section id="References">
+                <div class="references-header">
+                    <p class="subtitle">What others say about me</p>
+                    <h2 class="title">Here are some <span class="highlight">references</span></h2>
+                </div>
+                <div>
+                    
+                </div>
+            </section>
+
+
+
+            <section id="contact" class="container">
+                <h2>Contact Me</h2>
+                <p>you have an idea, a proposal for collaboration, or a simple question? I am here to listen.</p>
+                <form action="send_mail.php" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required=""></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+            </section>
+
+
+        </main>
+    </div>
+    <div id="particles-js"></div>
+
+   
+</body>
+
+    <footer id="footer-container"></footer>
+</html>
